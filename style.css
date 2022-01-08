@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #242121;
+}
+
+.card {
+  height: 400px;
+  width: 320px;
+  border-radius: 15px;
+  margin: 0 2rem;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.card .content {
+  height: 97%;
+  width: 97%;
+  border: 1px solid yellow;
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+}
+
+.card .content .inner-content {
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .content .inner-content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .content .inner-content .icons i {
+  padding: 0.5rem 0;
+}
+
+.card .content h3 {
+  font-size: 1.7rem;
+}
+
+.card:hover .content {
+  left: 50%;
+}
+
+.card-1 {
+  background: url(./img/brad.jpg);
+  background-position: center center;
+  background-size: 320px;
+}
+
+.card-1:hover {
+  background-position: left;
+  background-size: 380px;
+  -webkit-box-sizing: 10px 10px 18px rgba(0, 0, 0, 0.2);
+          box-sizing: 10px 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-2 {
+  background: url(./img/tomhardy.jpg);
+  background-position: center center;
+  background-size: 320px;
+}
+
+.card-2:hover {
+  background-position: top;
+  background-size: 420px;
+}
+
+.card-3 {
+  background: url(./img/sigmamale.jpg);
+  background-position: center center;
+  background-size: 380px;
+}
+
+.card-3:hover {
+  background-position: top;
+  background-size: 700px;
+}
+/*# sourceMappingURL=style.css.map */
